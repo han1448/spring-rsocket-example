@@ -13,6 +13,12 @@ public class NewsController {
 
     private final RSocketRequester rSocketRequester;
 
+    /**
+     * Returns newsfeed data from server.
+     *
+     * @param id news feed id
+     * @return NewsFeed
+     */
     @RequestMapping("/newsfeed/{id}")
     public Publisher<NewsFeed> getNewsFeed(@PathVariable Integer id) {
 
