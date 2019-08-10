@@ -13,6 +13,11 @@ import org.springframework.util.MimeTypeUtils;
 @Configuration
 public class ClientConfiguration {
 
+    /**
+     * Set connection to RSocket server.
+     *
+     * @return RSocket
+     */
     @Bean
     public RSocket rSocket() {
         return RSocketFactory
